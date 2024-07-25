@@ -15,3 +15,24 @@ modelos.forEach(modelo => {
 
 let caja = document.querySelector("#caja");
 caja.innerHTML = frase;
+
+
+// practica mia
+let nombre = "Walter",
+    apellido = "Diaz",
+    edad = 46,
+    nacionalidad = "Argentino",
+    profesion = "Desarrollador Web",
+    autosAnteriores = ["Renault 12", "Chevrolet Corsa", "Fiat Palio Weekend"];
+
+let presentacion = `Mi nombre es ${nombre} ${apellido}, 
+tengo ${edad} años, soy ${nacionalidad}, trabajo como ${profesion} y los autos que tuve son: <br/> <br/>`
+
+autosAnteriores.forEach(auto => {
+    presentacion += `-${auto} <br/>`;
+})
+
+let caja2 = document.querySelector("#caja2");
+caja2.innerHTML = presentacion;
+
+
