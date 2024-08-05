@@ -14,7 +14,7 @@ let concesionario = [
         marca: "Renault",
         modelos: ["Clio", "Capture", "Megane"]
     },
-]
+];
 
 function mostrar (datos) {
 
@@ -29,7 +29,7 @@ function mostrar (datos) {
         });
 
 
-        `</ul>`;
+        cajaConcesionario.innerHTML += `</ul>`;
         
         
     });
