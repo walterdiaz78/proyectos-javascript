@@ -1,42 +1,38 @@
 
-let lista = [2,4,6,8,10,12,14,16,18,];
+let concesionario = [
+    {
+        marca: "Mercedes",
+        modelos: ["clase A", "clase B", "clase C"]
+    },
 
-// function sumaArray(numeros) {
-//     let suma = 0;   
+    {
+        marca: "Audi",
+        modelos: ["A4", "A5", "A8"]
+    },
 
-//     for (let i = 0; i < numeros.length; i++ ){
-//         suma += numeros[i];
-//     }
-//     return suma;
-// }
-// console.log(sumaArray(lista));
+    {
+        marca: "Renault",
+        modelos: ["Clio", "Capture", "Megane"]
+    },
+]
 
-// calcular el producto de todos los elementos en el array 
+function mostrar (datos) {
 
-// function producto(numeros){
-//     let producto2 = 1;
-//     for (let i = 0; i< numeros.length; i++){
-//         producto2 *= numeros[i];
-//     }
-//     return producto2;
-// }
+    let cajaConcesionario = document.querySelector("#concesionario");
 
-// console.log(producto(lista))
+    datos.forEach(coches => {
+        cajaConcesionario.innerHTML += `<h1>${coches.marca}`;
 
-// Crea una función flecha que cuente cuántas vocales hay en una cadena.
+        cajaConcesionario.innerHTML += `<ul>`;
+        coches.modelos.forEach(modelo => {
+            cajaConcesionario.innerHTML += `<li>${modelo}</li>`;
+        });
 
-let palabra = "murcielago";
 
-function contarVocales(word){
-    let vocales = "AaEeIiOoUu";
-    let contador = 0;
-
-    for (let i = 0; i < word.length; i++){
-        if (vocales.includes(word[i])) {
-            contador++;
-        }
-    }
-    return contador;
+        `</ul>`;
+        
+        
+    });
 }
 
-console.log(contarVocales("pedorreta de murcielagoMi nombre es walter y soy programador web"));
+mostrar(concesionario);
