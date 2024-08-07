@@ -8,4 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
     data.innerHTML +=  "<h2>Ancho: "+ window.innerWidth +" Pixeles </h2>";
     data.innerHTML += "<h2>Altura: "+ window.innerHeight +" Pixeles </h2>";    
     data.innerHTML += "<h2>URL: "+ window.location.href +" Pixeles </h2>";
+
+    window.open("https://web13studio.com.ar", "blank")
 });
