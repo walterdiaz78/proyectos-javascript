@@ -1,5 +1,5 @@
 
-window.addEventListener("DOMContentLoaded", event => {
+
 
     let card = document.querySelectorAll(".layout__card");
     
@@ -20,4 +20,3 @@ window.addEventListener("DOMContentLoaded", event => {
     });
 });
 
-});
