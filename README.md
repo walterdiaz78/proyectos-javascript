@@ -1,6 +1,6 @@
 # Proyectos JavaScript
 
-Este repositorio contiene varios proyectos de JavaScript con los cuales estoy practicando para mejorar mis habilidades.
+Este repositorio contiene varios proyectos de JavaScript con los cuales estoy practicando para mejorar mis habilidades en Js.
 
 ## Tecnologías utilizadas
 
