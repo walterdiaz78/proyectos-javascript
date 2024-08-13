@@ -29,11 +29,11 @@ body{
 
 .emojis__emoji{
     font-size: 20rem;
-    filter: grayscale(1);
+    
 }
 
 .emojis__emoji:hover{
     transform: scale(1.1);
-    filter: grayscale(0);
+    
     cursor: pointer;
 }
