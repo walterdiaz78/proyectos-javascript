@@ -54,6 +54,12 @@ body{
     
   }
 
+  .card__img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;   
+    filter: brightness(1.2);
+  }
+
   .card__price{
     text-align: center;
     font-size: 2.5rem;
@@ -77,3 +83,10 @@ body{
     text-align: center;
     cursor: pointer;
   }
+  .card__btn:hover{
+    /* transform: scale(1.1); */
+    transition: 0.3s;   
+    filter: brightness(2);
+  }
+
+  
