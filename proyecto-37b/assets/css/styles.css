@@ -4,7 +4,7 @@ html{
 body{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-    background-color: #fff;
+    background-color: #eeecec;
     color: #444;
     
 }
@@ -122,6 +122,26 @@ body{
     }
     .layout{
         text-align: center;
+    }
+
+    
+    .nav__list {
+        flex-direction: column; 
+        display: none; 
+    }
+
+    .layout__nav.active .nav__list {
+        display: flex; 
+            
+    }
+
+    .layout__nav::before {
+        content: '☰'; 
+        font-size: 24px;
+        color: rgb(138, 134, 134);
+        cursor: pointer;
+        display: block;
+        
     }
 
 }

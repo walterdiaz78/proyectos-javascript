@@ -19,5 +19,11 @@ window.addEventListener("load", () => {
 
     });
 
+    // menu hamburguesa
+    let menu = document.querySelector('.layout__nav')
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+
 
 });
